@@ -1,5 +1,9 @@
-import src.calculator as calculator
-import src.helpers as helpers
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from src import calculator, helpers
 
 print("starting app")
 
